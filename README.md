@@ -1,4 +1,4 @@
-# JavaScript
+
 // JavaScript Functions - Warmup Problems
 
 // Problem: 1
