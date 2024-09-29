@@ -1,903 +1,491 @@
-
-// JavaScript Functions - Warmup Problems
-
-// Problem: 1
-
-// Write a function called “addFive".
-// Given a number, “addFive" returns 5 added to that number.
-// Input:
-// addFive(5);
-// addFive(0);
-// addFive(-5);
-// Output:
-// 10
-// 5
-// 0
-// let result = addFive(num){
-       retune num + 5;
-}
-// console.log(addfive(5)); 
-
-function addFive(num) {
-    return num + 5;
-}
-
-console.log(addFive(5));  // Output: 10
-console.log(addFive(0));  // Output: 5
-console.log(addFive(-5)); // Output: 0
-
-
-
-// Problem:2
-
-// Write a function called “getOpposite".
-// Given a number, return its opposite
-
-// Input:
-// getOpposite(5);
-// getOpposite(0);
-// getOpposite(-5);
-// getOpposite(“5a");
-// getOpposite(5.5);
-
-// Output:
-// -5
-// 0
-// 5
-// -1
-// -1
-
-// let num = 5;
-function getOpposite(num) 
-{
-if (typeof num === 'number')
- { return -num; 
-} 
-else 
-{ return -1; 
-}
-}
-// let result = getOpposite(num)
-// console.log(result);
-
-console.log(getOpposite(5));     
-console.log(getOpposite(0));    
-console.log(getOpposite(-5));  
-console.log(getOpposite("5a"));  
-console.log(getOpposite(5.5));    
-
-// Problem:3
-
-// Fill in your code that takes an number minutes and converts it to seconds.
-
-// Examples
-// toSeconds(5) ➞ 300
-// toSeconds(3) ➞ 180
-// toSeconds(2) ➞ 120
-
-// let min = 5;
-function toSeconds(min) {
-   return min * 60;
-}
-let min = 5;
-let secs = toSeconds(min)
-console.log(secs);
-
-
-// Problem:4
-
-// Create a function that takes a string and returns it as an integer.
-
-// Examples
-// toInteger(“6") ➞ 6
-// toInteger(“1000") ➞ 1000
-// toInteger(“12") ➞ 12
-
-// let mystr = "5";
-function toInteger(mystr) 
-{
-if(typeof mystr==="String")
-{return mystr;
-}
-
-}
-let mystr = "5";
-let myint = toInteger(mystr);
-console.log(myint);
-
-// let myint = toInteger(mystr)
-// console.log(myint); 
-
-
-// Problem:5
-
-// Create a function that takes a number as an argument, increments the number by +1 and returns the result.
-
-// Examples
-// nextNumber(0) ➞ 1
-// nextNumber(9) ➞ 10
-// nextNumber(-3) ➞ -2
-
-// let myint = 0;
-function nextNumber(myint) 
-{
-return myint+1;
-}
-let myint = 0;
-let myNextint = nextNumber(myint);
-console.log(myNextint(0)); // Output: 1
-
-console.log(nextNumber(9));   // Output: 10
-console.log(nextNumber(-3));  // Output: -2
-// let myNextint = nextNumber(myint)
-// console.log(myNextint); 
-
-
-// Problem:6
-
-// Create a function that takes an array and returns the first element.
-
-// Examples
-// getFirstElement([1, 2, 3]) ➞ 1
-// getFirstElement([80, 5, 100]) ➞ 80
-// getFirstElement([-500, 0, 50]) ➞ -500
-
-// let arr = [1, 2, 3];
-function getFirstElement(arr) 
-{
-let arr = [1, 2, 3];
-let data = getFirstElement(arr);
-console.log(data); // Output: 1
-console.log(getFirstElement([80, 5, 100]));   // Output: 80
-console.log(getFirstElemen t([-500, 0, 50]));  // Output: -500
-
-}
-// let data = getFirstElement(arr)
-// console.log(data); 
-
-// Problem:7
-
-// Convert Hours into Seconds
-
-// Write a function that converts hours into seconds.
-
-// Examples
-// hourToSeconds(2) ➞ 7200
-// hourToSeconds(10) ➞ 36000
-// hourToSeconds(24) ➞ 86400
-
-// let arr = [1, 2, 3];
-function hourToSeconds(arr) {
-for(let i=0;i<arr.length;i++)
- return arr[i]*3600
-}
-// let data = hourToSeconds(arr)
-// console.log(data)
-
-// Problem:8
-
-// Find the Perimeter of a Rectangle
-// Create a function that takes height and width and finds the perimeter of a rectangle.
-
-// Examples
-// findPerimeter(6, 7) ➞ 26
-// findPerimeter(20, 10) ➞ 60
-// findPerimeter(2, 9) ➞ 22
-function findPerimeter(num1,num2) {
-// return 2(num1+num2)
-return 2 * (num1 + num2);
-}
-let per1 = findPerimeter(6,7)
-console.log(peri);
-let peri2 = findPerimeter(20, 10);
-console.log(peri2); // ➞ 60
-
-let peri3 = findPerimeter(2, 9);
-console.log(peri3); // ➞ 22
-
-// Problem:9
-
-// Less Than 100?
-// Given two numbers, return true if the sum of both numbers is less than 100. Otherwise return false.
-
-// Examples
-// lessThan100(22, 15) ➞ true
-// // 22 + 15 = 37
-// lessThan100(83, 34) ➞ false
-// 83 + 34 = 117
-function lessThan100(num1,num2) {
-let sum=num1+num2
-return sum<100
-}
-// let res = lessThan100(22,15)
-// console.log(res)
-
-// Problem:10
-
-// There is a single operator in JavaScript, capable of providing the remainder of a division operation. Two numbers are passed as parameters. The first parameter divided by the second parameter will have a remainder, possibly zero. Return that value.
-
-// Examples
-// remainder(1, 3) ➞ 1
-// remainder(3, 4) ➞ 3
-// remainder(-9, 45) ➞ -9
-// remainder(5, 5) ➞ 0
-function remainder(num1,num2) {
- return num1%num2
-}
-let res1 = remainder(1, 3); 
-console.log(res1);
-
-let res2 = remainder(3, 4);  
-console.log(res2);
-
-let res3 = remainder(-9, 45);  
-console.log(res3);
-
-let res4 = remainder(5, 5);  
-console.log(res4);
-
-// let res = remainder(1,3)
-// console.log(res)
-
-// Problem:11
-
-// Old macdonald had a farm:
-// MacDonald is asking you to tell him how many legs can be counted among all his animals. The farmer breeds three species:
-// turkey = 2 legs
-// horse = 4 legs
-// pigs = 4 legs
-
-// The farmer has counted his animals and he gives you a subtotal for each species. You have to implement a function that returns the total number of legs of all the animals.
-
-// Examples
-// CountAnimals(2, 3, 5) ➞ 36
-// CountAnimals(1, 2, 3) ➞ 22
-// CountAnimals(5, 2, 8) ➞ 50
-
-
-function CountAnimals(tur, horse, pigs) {
-  return (tur * 2) + (horse * 4) + (pigs * 4);
-}
-
-let legs1 = CountAnimals(2, 3, 5);  
-console.log(legs1);
-
-let legs2 = CountAnimals(1, 2, 3); 
-console.log(legs2);
-
-let legs3 = CountAnimals(5, 2, 8); 
-console.log(legs3);
-
-// let legs = CountAnimals(2,3,5)
-
-// Problem:12
-
-// Frames Per Second
-// Create a function that returns the number of frames shown in a given number of minutes for a certain FPS.
-
-// Examples
-// frames(1, 1) ➞ 60
-// frames(10, 1) ➞ 600
-// frames(10, 25) ➞ 15000
-function frames(num1, num2) {
-  return num1 * 60 * num2;
-}
-
-let fps1 = frames(1, 1);  
-console.log(fps1);
-
-let fps2 = frames(10, 1); 
-console.log(fps2);
-
-let fps3 = frames(10, 25); 
-console.log(fps3);
-
-// let fps = frames(1,2)
-
-// Problem:13
-
-// Check if an Integer is Divisible By Five
-// Create a function that returns true if an integer is evenly divisible by 5, and false otherwise.
-
-// Examples
-// divisibleByFive(5) ➞ true
-// divisibleByFive(-55) ➞ true
-// divisibleByFive(37) ➞ false
-
-function divisibleByFive(num1) {
-  return num1 % 5 === 0;
-}
-
-let divisible1 = divisibleByFive(5);  
-console.log(divisible1);
-
-let divisible2 = divisibleByFive(-55);
-console.log(divisible2);
-
-let divisible3 = divisibleByFive(37); 
-console.log(divisible3);
-
-// let divisible = divisibleByFive(5)
-
-// Problem :14
-
-// Write a function called “isEven".
-// Given a number, “isEven" returns whether it is even.
-
-// Input:
-// isEven(12);
-// isEven(0);
-// isEven(11);
-// isEven(“11h");
-
-// Output:
-// true
-// true
-// false
-// -1
-
-function isEven(num){
-// your code here
-  // Check if the input is a valid number
-  if (typeof num !== 'number') {
-    return -1;
-  }
-  
-  // Check if the number is even
-  return num % 2 === 0;
-}
-
-
-let even1 = isEven(12);  
-console.log(even1);
-
-let even2 = isEven(0);  
-console.log(even2);
-
-let even3 = isEven(11);  
-console.log(even3);
-
-let even4 = isEven("11h"); 
-console.log(even4);
-
-}
-// let even = isEven(5)
-
-// Problem:15
-
-// Write a function called “areBothOdd".
-// Given 2 numbers, “areBothOdd" returns whether or not both of the given numbers are odd.
-
-// Input:
-// areBothOdd(1, 3);
-// areBothOdd(1, 4);
-// areBothOdd(2, 3);
-// areBothOdd(0, 0);
-
-// Output:
-// true
-// flase
-// flase
-// flase
-
-function areBothOdd(num1, num2){
-// your code here
-  return num1 % 2 !== 0 && num2 % 2 !== 0;
-}
-
-let result1 = areBothOdd(1, 3);  
-console.log(result1);
-
-let result2 = areBothOdd(1, 4);  
-console.log(result2);
-
-let result3 = areBothOdd(2, 3);  
-console.log(result3);
-
-let result4 = areBothOdd(0, 0); 
-console.log(result4);
-
-}
-
-// Problem:16
-
-// Write a function called “getFullName".
-// Given a first and a last name, “getFullName" returns a single string with the given first and last names separated by a single space.
-
-// Input:
-// getFullName(“GUVI", “GEEK");
-// getFullName(“GUVI", );
-// getFullName(, “GEEK");
-// getFullName(“", “");
-
-// Output:
-// “GUVI GEEK"
-// “GUVI"
-// “GEEK"
-// “"
-
-
-// your code 
-function getFullName(firstName, lastName) {
-  return (firstName || "") + " " + (lastName || "").trim();
-}
-
-let fullName1 = getFullName("GUVI", "GEEK");  
-console.log(fullName1);
-
-let fullName2 = getFullName("GUVI");          
-console.log(fullName2);
-
-let fullName3 = getFullName(undefined, "GEEK");  
-console.log(fullName3);
-
-let fullName4 = getFullName("", "");      
-console.log(fullName4);
-
-}
-
-// Problem:17
-
-// Write a function called “getLengthOfWord".
-// Given a word, “getLengthOfWord" returns the length of the given word.
-
-// Input:
-// getLengthOfWord(“GUVI");
-// getLengthOfWord(“");
-// getLengthOfWord();
-// getLengthOfWord(9);
-
-// Output:
-// 4
-// 0
-// -1
-// -1
-
-// your code here
-function getLengthOfWord(word1) {
-  // Check if the input is a valid string
-  if (typeof word1 !== 'string') {
-    return -1;
-  }
-  
-  // Return the length of the string
-  return word1.length;
-}
-
-let len1 = getLengthOfWord("GUVI"); 
-console.log(len1);
-
-let len2 = getLengthOfWord("");      
-console.log(len2);
-
-let len3 = getLengthOfWord();       
-console.log(len3);
-
-let len4 = getLengthOfWord(9);      
-console.log(len4);
-
-}
-
-// Problem:18
-
-// Write a function called “isSameLength".
-// Given two words, “isSameLength" returns whether the given words have the same length.
-
-// Input:
-// isSameLength(“GUVI", “GEEK");
-
-// Output:
-// true
-
-function isSameLength(word1, word2){
-// your code here
-
-  return word1.length === word2.length;
-}
-
-let result = isSameLength("GUVI", "GEEK");  // ➞ true
-console.log(result);
-
-}
-
-// Problem:19
-
-// Create a function to calculate the distance between two points defined by their x, y coordinates
-// console.log(getDistance(100, 100, 400, 300));
-function getDistance(x1, y1, x2, y2)
-{
-  return Math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2);
-}
-
-// Example call:
-console.log(getDistance(100, 100, 400, 300)); 
-
-
-}
-
-// Problem:20
-
-// Write a function called “getNthElement".
-// Given an array and an integer, “getNthElement" returns the element at the given integer, within the given array. If the array has a length of 0, it should return ‘undefined’.
-
-// Input:
-// getNthElement([1, 3, 5], 1);
-
-// Output:
-// 3
-function getNthElement(array,n){
-// your code here
-  if (array.length === 0) {
-    return undefined;
-  }
-  
-  // Return the element at the nth index
-  return array[n];
-}
-
-// Example call:
-let result = getNthElement([1, 3, 5], 1); 
-console.log(result);
-
-
-}
-
-// Problem:21
-
-// Write a function called “getLastElement".
-// Given an array, “getLastElement" returns the last element of the given array. If the given array has a length of 0, it should return ‘-1’.
-
-// Input:
-// getLastElement([1, 2, 3, 4]);
-
-// Output:
-// 4
-
-function getLastElement(array){
-// your code here
-  if (array.length === 0) {
-    return -1;
-  }
-  
-  // Return the last element of the array
-  return array[array.length - 1];
-}
-
-// Example call:
-let result = getLastElement([1, 2, 3, 4]);  // 4
-console.log(result);
-
-}
-
-// Problem:22
-
-// Write a function called “getProperty".
-// Given an object and a key, “getProperty" returns the value of the property at the given key. If there is no property at the given key, it should return undefined.
-
-// let obj = {
-// mykey: “value"
-// };
-
-// Input:
-// getProperty(obj,’mykey’);
-// getProperty(obj,’dummykey’);
-
-// Output:
-// value
-// NA
-// let obj = {
-// mykey: “value"
-// };
-function getProperty(obj, key) {
-// your code here
-  
-  return obj[key];
-}
-
-// Example calls:
-let obj = {
-  mykey: "value"
+// If you practise all these problems..
+// you will be strong in JS objects manipulations.
+
+
+// Problem 1 : Part A
+
+// Playing with JSON object"s Values:
+//1
+// Fluffy sorry, Fluffyy is my fav cat and it has 2 catFriends
+// Write a code to get the below details of Fluffyy so that
+// I can take him to the vet.
+let cat = {
+    name: "Fluffy",
+    activities: ["play", "eat cat food"],
+    catFriends: [
+        {
+            name: "bar",
+            activities: ["be grumpy", "eat sandwich"],
+            weight: 8,
+            furcolor: "white"
+        },
+        {
+            name: "foo",
+            activities: ["sleep", "pre-sleep naps"],
+            weight: 3
+        },
+    ]
 };
 
-let result1 = getProperty(obj, 'mykey');    // "value"
-console.log(result1);
+console.log("Original Cat Object:", cat);
 
-let result2 = getProperty(obj, 'dummykey'); //  undefined
-console.log(result2);
+// Task 1: Add height and weight to Fluffy
+cat.height = "30 cm"; // Example height
+cat.weight = 10; // Example weight
+console.log("After adding height and weight:", cat);
 
+// Task 2: Update Fluffy's name to Fluffyy
+cat.name = "Fluffyy";
+console.log("After updating name:", cat);
+
+// Task 3: List all the activities of Fluffyy's catFriends
+const catFriendsActivities = cat.catFriends.map(friend => friend.activities).flat();
+console.log("Activities of Fluffyy's catFriends:", catFriendsActivities);
+
+// Task 4: Print the catFriends' names
+const catFriendsNames = cat.catFriends.map(friend => friend.name);
+console.log("CatFriends' names:", catFriendsNames);
+
+// Task 5: Print the total weight of catFriends
+const totalWeight = cat.catFriends.reduce((total, friend) => total + friend.weight, 0);
+console.log("Total weight of catFriends:", totalWeight);
+
+// Task 6: Print the total activities of all cats (including Fluffyy)
+const totalActivities = cat.activities.length + catFriendsActivities.length;
+console.log("Total activities of all cats:", totalActivities);
+
+// Task 7: Add 2 more activities to bar & foo cats
+cat.catFriends[0].activities.push("play with string", "chase laser pointer"); // bar
+cat.catFriends[1].activities.push("climb tree", "catch mouse"); // foo
+console.log("After adding activities to bar & foo:", cat.catFriends);
+
+// Task 8: Update the fur color of bar
+cat.catFriends[0].furcolor = "black"; // Changing fur color of bar
+console.log("After updating fur color of bar:", cat.catFriends[0]);
+
+// Basic Tasks to play with JSON
+
+
+// Add height and weight to Fluffy
+// Fluffy name is spelled wrongly. Update it to Fluffyy
+// List all the activities of Fluffyy"s catFriends.
+// Print the catFriends names.
+// Print the total weight of catFriends
+// Print the total activities of all cats (op:6)
+// Add 2 more activities to bar & foo cats
+// Update the fur color of bar
+
+// Problem 1 : Part B :
+
+// Iterating with JSON object"s Values
+
+// Below is some information about my car. As you can see, I am not the best driver.
+// I have caused a few accidents.
+// Please update this driving record so that I can feel better about my driving skills.
+
+
+let myCar = {
+make: "Bugatti",
+model: "Bugatti La Voiture Noire",
+year: 2019,
+accidents: [
+{
+date: "3/15/2019",
+damage_points: "5000",
+atFaultForAccident: true
+},
+{
+date: "7/4/2022",
+damage_points: "2200",
+atFaultForAccident: true
+},
+{
+date: "6/22/2021",
+damage_points: "7900",
+atFaultForAccident: true
+},
+]
 }
 
-// Problem:23
+// Question to work on the Iteration with JSON
 
-// Write a function called “addProperty".
-// Given an object and a key, “addProperty" adds a new property on the given object with a value of true.
-
-// let obj = {
-// }
-
-// Input:
-// addProperty(obj, “mykey");
-
-// Output:
-// {
-// mykey: true
-// }
-// let obj = {
-// mykey: “value"
-// };
-function addProperty(obj, key){
-// your code here
-  obj[key] = true;
-}
-
-// Example calls:
-let obj1 = {};
-addProperty(obj1, "mykey"); 
-console.log(obj1);           // { mykey: true }
-
-let obj2 = { mykey: "value" };
-addProperty(obj2, "mykey"); 
-console.log(obj2);           //  { mykey: true }
-
-}
-
-// Problem:24
-
-// Write a function called “removeProperty".
-// Given an object and a key, “removeProperty" removes the given key from the given object.
-
-// Input:
-// removeProperty(obj, “name");
-
-// Output:
-// undefined
-
-function removeProperty(obj, key){
-// your code here
-
-  delete obj[key];
-}
-
-let obj = { name: "Alice", age: 25 };
-removeProperty(obj, "name"); 
-console.log(obj);              //  { age: 25 }
-
-removeProperty(obj, "nonexistentKey");
-console.log(obj);              //  { age: 25 }
-
-}
-
-// Problem:25
-
-// Return an array, where the first element is the count of positives numbers and the second element is sum of negative numbers.
-// let arr = [-5, 10, -3, 12, -9, 5, 90, 0, 1];
-let ar22 = function countPositivesSumNegatives(arr) {
-  let countPositives = 0; 
-  let sumNegatives = 0;   
-
- 
-  if (arr.length === 0) {
-    return [0, 0]; 
-  }
-
-
-  for (let num of arr) {
-    if (num > 0) {
-      countPositives++;
-    } else if (num < 0) {
-      sumNegatives += num; 
+// 1. Loop over the accidents array and change atFaultForAccident from true to false
+myCar.accidents.forEach(accident => {
+    if (accident.atFaultForAccident) {
+        accident.atFaultForAccident = false;
     }
-  }
+});
 
-  
-  return [countPositives, sumNegatives];
-};
+// 2. Print the dates of my accidents
+console.log("Dates of my accidents:");
+myCar.accidents.forEach(accident => {
+    console.log(accident.date);
+});
+Dates of my accidents:
+3/15/2019
+6/22/2021
+
+// Real challenges starts here:bowtie:
+
+// Problem 2 :
+
+// Parsing an JSON object"s Values:
+
+// 1.Write a function called "printAllValues" which returns an newArray of all the input object"s values.
+// Input (Object):
+
+// let object1 = {name: "RajiniKanth", age: 33, hasPets : false};
+// Output:
+// ["RajiniKanth", 33, false]
+
+// Sample Function proto:
+
+// let obj = {name : "RajiniKanth", age : 33, hasPets : false};
+function printAllValues(obj) {
+function printAllValues(obj) {
+    return Object.values(obj);
+}
 
 // Example usage
-let arr = [-5, 10, -3, 12, -9, 5, 90, 0, 1];
-let result = ar22(arr);
-console.log(result); // ➞ [4, -17]
-
+let object1 = { name: "RajiniKanth", age: 33, hasPets: false };
+let valuesArray = printAllValues(object1);
+console.log(valuesArray); // Output: ["RajiniKanth", 33, false]
 
 }
-// console.log(ar22);
 
-// Problem:26
 
-// Create a function that receives an array of numbers and returns an array containing only the positive numbers
-function getPositives(ar)
+// Problem 3:
 
-{
-// your code here
-  return ar.filter(num => num > 0);
+// Parsing an JSON object"s Keys:
+// Write a function called "printAllKeys" which returns an newArray of all the input object"s keys.
+// Example Input:
+// {name : "RajiniKanth", age : 25, hasPets : true}
+// Example Output:
+// ["name", "age", "hasPets"]
+// Sample Function proto:
+
+function printAllKeys(obj) {
+function printAllKeys(obj) {
+    return Object.keys(obj);
 }
 
 // Example usage
-let ar = [-5, 10, -3, 12, -9, 5, 90, 0, 1];
-let ar222 = getPositives(ar);
-console.log(ar222); //  [10, 12, 5, 90, 1]
-
+let object1 = { name: "RajiniKanth", age: 25, hasPets: true };
+let keysArray = printAllKeys(object1);
+console.log(keysArray); // Output: ["name", "age", "hasPets"]
 
 }
-// let ar = [-5, 10, -3, 12, -9, 5, 90, 0, 1];
-// let ar222 = getPositives(ar);
-// console.log(ar222);
 
-// Problem:27
 
-// Write a function `powersOfTwo` which will return list of all powers of 2 from 0 to n (where n is an exponent).
-// n = 0 -> 2⁰ -> [1]
-// n = 1 -> 2⁰, 2¹ -> [1,2]
-// n = 2 -> 2⁰, 2¹, 2² -> [1,2,4]
+// Problem 4 :
 
-// Input:
-// powersOfTwo(0)
-// powersOfTwo(1)
-// powersOfTwo(2)
+// Parsing an JSON object and convert it to a list:
+
+// Write a function called "convertObjectToList" which converts an object literal into an array of arrays.
+// Input (Object):
+// let object = {name: "ISRO", age: 35, role: "Scientist"};
+// Output:
+// [["name", "ISRO"], ["age", 35], ["role", "Scientist"]]
+// Sample Function proto:
+// let obj = {name: "ISRO", age: 35, role: "Scientist"};
+function convertListToObject(obj) {
+function convertObjectToList(obj) {
+    return Object.entries(obj);
+}
+
+// Example usage
+let object = { name: "ISRO", age: 35, role: "Scientist" };
+let result = convertObjectToList(object);
+console.log(result); // Output: [["name", "ISRO"], ["age", 35], ["role", "Scientist"]]
+
+}
+
+// Problem 5: ( 5 mins):
+
+// Parsing a list and transform the first and last elements of it:
+// Write a function "transformFirstAndLast" that takes in an array, and returns an object with:
+// 1) the first element of the array as the object"s key, and
+// 2) the last element of the array as that key"s value.
+
+// Input (Array):
+// let array = ["Hi", "I", "am", "Geek"];
+// Output:
+// let object = {
+// HI : "Geek"
+// }
+// Sample Function proto:
+// let arr = ["HI", "I", "am", "a geek"];
+function transformFirstAndLast(arr) {
+    // Check if the array has at least 2 elements
+    if (arr.length < 2) {
+        return {}; // Return an empty object if there are not enough elements
+    }
+    
+    const firstElement = arr[0].toUpperCase(); // Get the first element and convert to uppercase
+    const lastElement = arr[arr.length - 1]; // Get the last element
+
+    // Create and return the new object
+    return {
+        [firstElement]: lastElement
+    };
+}
+
+// Example usage
+let array = ["Hi", "I", "am", "Geek"];
+let object = transformFirstAndLast(array);
+console.log(object); // Output: { HI: "Geek" }
+
+
+// Problem 6 :
+
+// Parsing a list of lists and convert into a JSON object:
+// Write a function "fromListToObject" which takes in an array of arrays, and returns an object with each pair of elements in the array as a key-value pair.
+// Input (Array):
+// let array = [["make", "Ford"], ["model", "Mustang"], ["year", 1964]];
+// Output:
+// let object = {
+// make : "Ford"
+// model : "Mustang",
+// year : 1964
+// }
+// Sample Function proto:
+// let arr = [["make", "Ford"], ["model", "Mustang"], ["year", 1964]];
+function fromListToObject(arr) {
+    let newObject = {}; // Initialize an empty object
+
+    // Iterate over the array of arrays
+    arr.forEach(pair => {
+        const key = pair[0]; // First element as the key
+        const value = pair[1]; // Second element as the value
+        newObject[key] = value; // Assign the key-value pair to the object
+    });
+
+    return newObject; // Return the constructed object
+}
+
+// Example usage
+let array = [["make", "Ford"], ["model", "Mustang"], ["year", 1964]];
+let object = fromListToObject(array);
+console.log(object);
+// Output: { make: 'Ford', model: 'Mustang', year: 1964 }
+
+// Problem 7 :
+
+// Parsing a list of lists and convert into a JSON object:
+// Write a function called "transformGeekData" that transforms some set of data from one format to another.
+// Input (Array):
+// let array = [[["firstName", "Vasanth"], ["lastName", "Raja"], ["age", 24], ["role", "JSWizard"]], [["firstName", "Sri"], ["lastName", "Devi"], ["age", 28], ["role", "Coder"]]];
 
 // Output:
-// 1
-// 1,2
-// 1,2,4
-function powersOfTwo(n) {
-  let res = []; 
-  
-  // Loop from 0 to n
-  for (let i = 0; i <= n; i++) {
-    res.push(Math.pow(2, i)); 
-  }
-  
-  return res; 
-}
+// [
+// {firstName: "Vasanth", lastName: "Raja", age: 24, role: "JSWizard"},
+// {firstName: "Sri", lastName: "Devi", age: 28, role: "Coder"}
+// ]
 
+// Sample Function proto:
+// let arr= [[["firstName", "Vasanth"], ["lastName", "Raja"], ["age", 24], ["role", "JSWizard"]], [["firstName", "Sri"], ["lastName", "Devi"], ["age", 28], ["role", "Coder"]]];
 
-console.log(powersOfTwo(0)); //  [1]
-console.log(powersOfTwo(1)); // [1, 2]
-console.log(powersOfTwo(2)); //  [1, 2, 4]
+function transformGeekData(arr) {
+    let transformedList = []; // Initialize an empty array to hold the transformed objects
 
+    // Iterate over each inner array
+    arr.forEach(innerArray => {
+        let obj = {}; // Create a new object for each inner array
+        innerArray.forEach(pair => {
+            const key = pair[0]; // First element as the key
+            const value = pair[1]; // Second element as the value
+            obj[key] = value; // Assign the key-value pair to the object
+        });
+        transformedList.push(obj); // Add the object to the transformed list
+    });
 
-// Problem:28
-
-// Find the maximum number in an array of numbers
-function findMax(ar)
-{
-// your code here
-function findMax(ar) {
-  if (ar.length === 0) {
-    return undefined; 
-  }
-  
-  
-  return Math.max(...ar);
-}
-
-
-let ar = [-5, 10, -3, 12, -9, 5, 90, 0, 1];
-let max = findMax(ar);
-console.log("Max:", max); //  Max: 90
-
-}
-// let ar = [-5, 10, -3, 12, -9, 5, 90, 0, 1];
-// let max = findMax(ar);
-// console.log(“Max: “, max);
-
-
-// Problem:29
-
-// Print the first 100 prime numbers
-// printPrimes(100);
-
-// Function prints the first nPrimes numbers
-function printPrimes(nPrimes)
-{
-let n = 0;
-let i = 2;
-
-while(n < nPrimes)
-{
-if (isPrime(i))
-{
-console.log(n, " → ", i);
-n++;
-}
-
-i++;
-}
-}
-// Returns true if a number is prime
-function isPrime(n)
-{
-// your code here
-
-}
-
-// Problem:30
-
-// Create a function that will return in an array the first “nPrimes" prime numbers greater than a particular number “startAt"
-// console.log(getPrimes(10, 100));
-function getPrimes(nPrimes, startAt)
-{
-// your code here
-isPrime(i)
-}
-// Returns true if a number is prime
-function isPrime(n)
-{
-// your code here
-  if (n <= 1) return false; 
-  for (let i = 2; i <= Math.sqrt(n); i++) {
-    if (n % i === 0) return false; 
-  }
-  return true; // n is prime
+    return transformedList; // Return the array of transformed objects
 }
 
 // Example usage
-printPrimes(100)
+let array = [
+    [["firstName", "Vasanth"], ["lastName", "Raja"], ["age", 24], ["role", "JSWizard"]],
+    [["firstName", "Sri"], ["lastName", "Devi"], ["age", 28], ["role", "Coder"]]
+];
+
+let result = transformGeekData(array);
+console.log(result);
+/*
+Output:
+[
+    { firstName: "Vasanth", lastName: "Raja", age: 24, role: "JSWizard" },
+    { firstName: "Sri", lastName: "Devi", age: 28, role: "Coder" }
+]
+*/
+
+// Problem 8: (10 — 20 mins):
+
+// Parsing two JSON objects and Compare:
+
+// Read this : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify
+
+// Write an "assertObjectsEqual" function from scratch.
+// Assume that the objects in question contain only scalar values (i.e., simple values like strings or numbers).
+// It is OK to use JSON.stringify().
+
+// Note: The examples below represent different use cases for the same test. In practice, you should never have multiple tests with the same name.
+
+// Success Case:
+// Input:
+// let expected = {foo: 5, bar: 6};
+// let actual = {foo: 5, bar: 6}
+// assertObjectsEqual(actual, expected, "detects that two objects are equal");
+// Output:
+// Passed
+
+// Failure Case:
+// Input:
+// let expected = {foo: 6, bar: 5};
+// let actual = {foo: 5, bar: 6}
+// assertObjectsEqual(actual, expected, "detects that two objects are equal");
+// Output:
+// FAILED [my test] Expected {"foo":6,"bar":5}, but got {"foo":5,"bar":6}
+
+// let expected = {foo: 5, bar: 6};
+// let actual = {foo: 5, bar: 6}
+function assertObjectsEqual(actual, expected, testName){
+    function assertObjectsEqual(actual, expected, testName) {
+        // Convert both objects to JSON strings for comparison
+        const actualString = JSON.stringify(actual);
+        const expectedString = JSON.stringify(expected);
+    
+        // Check if the actual string is equal to the expected string
+        if (actualString === expectedString) {
+            console.log(`Passed: ${testName}`);
+        } else {
+            console.log(`FAILED [${testName}] Expected ${expectedString}, but got ${actualString}`);
+        }
+    }
+    
+    // Example Test Cases
+    
+    // Success Case
+    let expected1 = { foo: 5, bar: 6 };
+    let actual1 = { foo: 5, bar: 6 };
+    assertObjectsEqual(actual1, expected1, "detects that two objects are equal");
+    
+    // Failure Case
+    let expected2 = { foo: 6, bar: 5 };
+    let actual2 = { foo: 5, bar: 6 };
+    assertObjectsEqual(actual2, expected2, "detects that two objects are equal");
+    
 }
 
-// Problem:31
+// Problem 9 :
 
-// Reverse a string
-// let s = reverseString("JavaScript");
-// console.log(s);
-function reverseString(s)
-{
-  // your code here 
- 
-  return s.split('').reverse().join('');
+// Parsing JSON objects and Compare:
+
+// I have a mock data of security Questions and Answers. You function should take the object and a pair of strings and should return if the quest is present and if its valid answer
+// let securityQuestions = [
+// {
+// question: "What was your first pet"s name?",
+// expectedAnswer: "FlufferNutter"
+// },
+// {
+// question: "What was the model year of your first car?",
+// expectedAnswer: "1985"
+// },
+// {
+// question: "What city were you born in?",
+// expectedAnswer: "NYC"
+// }
+// ]
+function chksecurityQuestions(securityQuestions,question) {
+    function chksecurityQuestions(securityQuestions, question, answer) {
+        // Iterate through each security question object
+        for (let i = 0; i < securityQuestions.length; i++) {
+            // Check if the current question matches the input question
+            if (securityQuestions[i].question === question) {
+                // Check if the expected answer matches the input answer
+                return securityQuestions[i].expectedAnswer === answer;
+            }
+        }
+        // Return false if the question is not found
+        return false;
+    }
+    
+    // Test Cases
+    
+    let securityQuestions = [
+        {
+            question: "What was your first pet's name?",
+            expectedAnswer: "FlufferNutter"
+        },
+        {
+            question: "What was the model year of your first car?",
+            expectedAnswer: "1985"
+        },
+        {
+            question: "What city were you born in?",
+            expectedAnswer: "NYC"
+        }
+    ];
+    
+    // Test case 1
+    let ques1 = "What was your first pet's name?";
+    let ans1 = "FlufferNutter";
+    let status1 = chksecurityQuestions(securityQuestions, ques1, ans1);
+    console.log(status1); // Output: true
+    
+    // Test case 2
+    let ques2 = "What was your first pet's name?";
+    let ans2 = "DufferNutter";
+    let status2 = chksecurityQuestions(securityQuestions, ques2, ans2);
+    console.log(status2); // Output: false
+    
+return true/false;
+}
+// //Test case1:
+
+// let ques = "What was your first pet"s name?";
+// let ans  =  "FlufferNutter";
+// let status = chksecurityQuestions(securityQuestions, ques, ans);
+// console.log(status); // true
+
+// //Test case2:
+
+// let ques = "What was your first pet"s name?";
+// let ans  =  "DufferNutter";
+// let status = chksecurityQuestions(securityQuestions, ques, ans);
+// console.log(status); // flase
+
+// Problem 10 :
+
+// Parsing JSON objects and Compare:
+// Write a function to return the list of characters below 20 age
+
+let students = [
+    { name: "Siddharth Abhimanyu", age: 21 },
+    { name: "Malar", age: 25 },
+    { name: "Maari", age: 18 },
+    { name: "Bhallala Deva", age: 17 },
+    { name: "Baahubali", age: 16 },
+    { name: "AAK chandran", age: 23 },
+    { name: "Gabbar Singh", age: 33 },
+    { name: "Mogambo", age: 53 },
+    { name: "Munnabhai", age: 40 },
+    { name: "Sher Khan", age: 20 },
+    { name: "Chulbul Pandey", age: 19 },
+    { name: "Anthony", age: 28 },
+    { name: "Devdas", age: 56 }
+];
+
+function returnMinors(arr) {
+    // Use filter to return an array of students under 20
+    return arr.filter(student => student.age < 20);
 }
 
-// Example usage
-let s = reverseString("JavaScript");
-console.log(s); //  "tpircSavaJ"
+// Output the list of students below the age of 20
+console.log(returnMinors(students));
+[
+    { name: "Maari", age: 18 },
+    { name: "Bhallala Deva", age: 17 },
+    { name: "Baahubali", age: 16 },
+    { name: "Chulbul Pandey", age: 19 }
+]
 
-}
-
-// Problem:32
-
-// Create a function that will merge two arrays and return the result as a new array
-// let ar1 = [1, 2, 3];
-// let ar2 = [4, 5, 6];
-// let ar = mergeArrays(ar1, ar2);
-// console.log(ar);
-function mergeArrays(ar1, ar2)
-{
-let result = [];
-//this will add the first array to the result array
-for(let el of ar1)
-{
-result.push(el);
-}
-
-//Some piece of code goes here
-for (let el of ar2) {
-    result.push(el);
-  }
-  
-  return result; 
-}
-
-// Example usage
-let ar1 = [1, 2, 3];
-let ar2 = [4, 5, 6];
-let ar = mergeArrays(ar1, ar2);
-console.log(ar); //  [1, 2, 3, 4, 5, 6]
-
-return result;
-}
-
-// Problem:33
-
-// Calculate the sum of numbers received in a comma delimited string
-// console.log(sumCSV(“1.5, 2.3, 3.1, 4, 5.5, 6, 7, 8, 9, 10.9"));
-
-function sumCSV(s)
-{
- // your code here
-  return s.split(',').reduce((acc, curr) => acc + parseFloat(curr.trim()), 0);
-}
-
-// Example usage
-console.log(sumCSV("1.5, 2.3, 3.1, 4, 5.5, 6, 7, 8, 9, 10.9")); // 57.3
-
-}
